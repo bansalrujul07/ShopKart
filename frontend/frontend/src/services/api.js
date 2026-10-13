@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:8082",
+    baseURL: "https://shopkart-backend-7n6n.onrender.com",
     withCredentials: true,
     // headers: {
     //     "Content-Type": "application/json"
