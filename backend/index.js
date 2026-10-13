@@ -9,7 +9,7 @@ import cartRoutes from "./routes/cart.routes.js";
 import orderRoutes from "./routes/order.routes.js";
 import cors from "cors";
 
-const port = 8082;
+const port = process.env.PORT || 8082;
 const app = express()
 app.use(express.json())
 app.use(cookieParser())
