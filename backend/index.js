@@ -23,7 +23,10 @@ mongoose.connect(process.env.dbUrl)
 });
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: [
+        "http://localhost:5173",
+        "https://shop-kart-inky-one.vercel.app"
+    ],
     credentials: true
 }));
 
